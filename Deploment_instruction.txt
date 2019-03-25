@@ -1,0 +1,16 @@
+I am using amazon aws to deploy this MERN stack application
+step by step process to deploy it on amazon aws ec2 service
+
+1. go to project root folder and then client (frontend react part) then run command npm run build
+2. then goto root folder again by "cd .."
+3. then open server.js and add following code in the server.js file
+    const path = require("path");
+    app.use(express.static(path.join(__dirname, "client/build")))   
+4. touch .gitignore
+5. add following to .gitignore file
+    /node_modules
+    package-lock.json
+    .env
+6. create aws ec2 instance by following the instruction of the following tutorial or blog post
+    https://medium.com/@rksmith369/how-to-deploy-mern-stack-app-on-aws-ec2-with-ssl-nginx-the-right-way-e76c1a8cd6c6
+7. By following this above medium post This can be esily done.

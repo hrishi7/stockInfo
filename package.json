@@ -1,0 +1,23 @@
+{
+  "name": "stock_archive",
+  "version": "1.0.0",
+  "description": "This is a stock archive application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Hrishikesh baidya",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^4.13.12"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
